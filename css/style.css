@@ -1,0 +1,830 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+/* config - Header*/
+header {
+    background-color: #57A156;
+    height: 150px;
+}
+
+header .interno{
+    margin: auto;
+    height: 150px;
+    width:1200px;
+    position: relative;
+    
+}
+  
+.retan1, .retan2 {
+    position: absolute;
+    height: 30px;
+}
+.retan1 {
+    width: 1178px;
+    right: 11px;
+    bottom: 10px;
+    transform: sken(30deg);
+    -webkit-transform: skew(30deg); 
+    -moz-transform: skew(30deg); 
+    -o-transform: skew(30deg); 
+    background: #9EBAA3;
+}
+.retan2 {
+    width: 800px;
+    right: 80px;
+    bottom: 30px;
+    transform: sken(30deg);
+    -webkit-transform: skew(30deg); 
+    -moz-transform: skew(30deg); 
+    -o-transform: skew(30deg); 
+    background:#7DC77C;
+}
+
+.menu ul  {
+    list-style: none;  
+    text-align: center;   
+    width: 600px;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    right: 170px;
+    bottom:5px;
+    transform: sken(30deg);
+    -webkit-transform: skew(30deg); 
+    -moz-transform: skew(30deg); 
+    -o-transform: skew(30deg); 
+    background: #CFD1D0;
+}
+.menu ul li {
+    display: inline;
+}
+.menu ul li a {
+    margin: 0 15px;
+    display: inline-block;
+    text-decoration: none;
+    color: #57A156;
+    cursor: pointer;
+    transform: sken(-30deg);
+    -webkit-transform: skew(-30deg); 
+    -moz-transform: skew(-30deg); 
+    -o-transform: skew(-30deg); 
+  
+}
+
+.social {
+   position: absolute;
+   list-style: none;
+   right: 80px;
+   top: 30px;
+}
+.social li {
+    display: inline;
+    margin: 0 10px;
+    
+}
+
+
+.social li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #CFD1D0;
+    
+}
+
+.social li a i {
+   font-size: 30px;
+}
+
+.logo{
+    position: absolute;
+    top: 70px;
+    left: 25px;
+    font-size: 35px;
+}
+.logo a {
+    text-decoration: none !important;
+    color: #CFD1D0;
+}
+.logo a:hover {
+    color:#CFD1D0 !important;
+}
+
+@media only screen and (max-width: 37em){
+    header .interno{
+        width: 100%;
+    }
+    .retan1, .retan2 {
+        width: 100%;
+        height: 20px;
+        right:0;
+        transform: sken(0deg);
+        -webkit-transform: skew(0deg); 
+        -moz-transform: skew(0deg); 
+        -o-transform: skew(0deg); 
+        background-color: #7DC77C;
+    }
+    /*menu*/
+    .menu ul {
+        width: 100%;
+        bottom: 4px;
+        right: 0;
+        height: 20px;
+        line-height: 20px;
+        transform: sken(0deg);
+        -webkit-transform: skew(0deg); 
+        -moz-transform: skew(0deg); 
+        -o-transform: skew(0deg); 
+    }
+    .menu ul li a {
+        transform: sken(0deg);
+        -webkit-transform: skew(0deg); 
+        -moz-transform: skew(0deg); 
+        -o-transform: skew(0deg);
+        font-size: 0.8em;
+        margin: 0 10px;
+    }
+    /*social*/
+    .social {
+        width: 100%;
+        right: 0;
+        bottom: 40px;
+        top:initial;
+        text-align: center;
+    }
+
+    /*logo*/
+    .logo {
+        top: 10px;
+        width: 100%;
+        left: initial;
+        text-align: center;
+    }
+    /*contato*/
+    .contato{
+        width: 100%;
+        padding-top: 15px;
+    }
+    .contato-header {
+        height: 100px!important;
+        padding: 5px 25px!important;
+        width: 90%;
+        margin: auto;
+         
+    }
+    .contato-header h3 {
+        word-wrap: break-word!important;
+        line-height: 30px!important;
+        text-align:justify!important;
+        font-size: 1em!important;
+        font-style: normal!important;
+    }
+    .triangle-topleft{
+        top: 90px!important;
+        left: 60px!important;
+    }
+
+    .circulos{
+        margin-left: 10px !important;
+    }
+    .circ {
+        width: 60px!important;
+        height: 60px!important;
+    }
+        .circ::before{
+            width: 55px!important;
+            height: 55px!important;
+            top: 3px!important;
+            left: 3px!important;
+        }
+        .circ::after{
+            width: 45px!important;
+            height: 45px!important;
+            top: 0px!important;
+            left: 0px!important;
+        }
+    .circ i {
+        font-size: 30px!important;
+        top: 15px!important;
+        left: 15px!important;
+    }
+    #whats {
+        font-size: 35px!important;
+        top: 10px!important;
+        left: 16px!important;
+    }
+
+    .info-contato h3{
+        font-size: 18px!important;
+    }
+    .info-contato a{
+        font-size: 16px!important;
+    }
+    .info-contato-card {
+        margin-bottom: 11px!important;
+        height: 60px!important;
+    }
+    .contato-body img {
+        display: none;
+    }
+    .contato-body .caminhao-verde{
+        display: none!important;
+    }
+    .sobre-parceiros{
+        flex-direction: column;
+    }
+    .sobre, .sobre img{
+        width: 100%!important;
+    }
+    .retan3, .retan4 {
+        width: 100%!important;
+        border-left: none!important;    
+    }
+        .retan3 p {
+            text-align: center!important;
+        }
+    .parceiros{
+        width: 100%!important;
+        height: initial!important;
+        text-align: center!important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        .parceiros h3 {
+            font-size: 1em!important;
+        }
+        .parceiros img {
+            width: 150px!important;
+            right: 0;
+            top: 0;
+            left: 0;
+            bottom: 0;    
+            position: initial!important;
+            margin-bottom: 30px;
+        }
+            .parceiros .fde {
+                width: 250px!important;
+                margin-bottom: 0!important; 
+            }
+
+    .retan5,.retan6 {
+        width: 100%!important;
+        border-right: none!important;
+    }
+
+
+    /*footer*/
+    footer{
+        height: 150px;
+        border-top: 0!important;
+        padding: 25px 15px;
+    }
+        footer h3{
+            line-height: normal!important;
+        }
+        footer .agencia {
+            width: 100%;
+        }
+        footer .agencia a  {
+            float: none;
+            margin: auto;
+        }
+        .cargas {
+            flex-direction: column;
+            height: initial!important;
+            width: initial!important;
+        }
+        .circulo {
+            margin:0 auto 40px!important;
+        }
+        .caminhao {
+            top: -20px!important;
+        }
+        .circulo .left {
+            top: 190px!important;
+        }
+        .circulo .caixas {
+            top: 260px!important;
+            left: -30px!important;
+        }
+    .resumo-servicos-interno {
+        flex-direction: column!important;
+        width: 100%!important;
+        padding-top: 30px; 
+    }  
+    .img_fluid{
+        width: 110%!important;
+        height:300px!important;
+    }  
+    .mapa{
+        width: 90%!important;
+        margin: auto!important;
+        height: 400px!important;
+    }
+    .locais-atendimento{
+        width: 100%!important;
+        text-align: center!important;
+        margin-bottom: 30px!important;
+    }
+}   
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 30px !important;
+    height: 30px !important;
+}
+.carousel-control-prev-icon{
+    background-image: url(/img/angle-double-left-solid.png)!important;
+    
+}
+.carousel-control-next-icon{
+    background-image: url(/img/angle-double-right-solid.png)!important;
+}
+    .carousel-caption{
+        color: white!important;
+        background-color: rgba(0, 0, 0, 0.662)!important;
+        bottom: 10px!important;
+        padding: 10px 0!important;
+    }
+        .carousel-caption h5 {
+            margin: 0!important;
+            font-size: 1em!important;
+        }
+        .carousel-caption p {
+            margin: 0!important;
+            font-size: 0.8em!important;
+        }
+        
+
+.resumo-servicos{
+    width: 100%;
+}
+.resumo-servicos-interno{
+    width:1200px;
+    min-height: 400px;
+    /*background-color: #7DC77C;*/
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cargas{
+    width: 400px;
+    height: 235px;
+    /*background-color: #9EBAA3;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.circulo{   
+    background-color: #7DC77C;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 10px solid #57A156;
+            
+}
+    .circulo h3 {
+        position: absolute;
+        font-size: 14px;
+        font-weight: bold;
+        bottom: -5px;
+        color: #57A156;
+    }
+        .left{
+            left: 17px;
+        }
+        .right{
+            right: 8px;
+        }
+    .circulo .caminhao{
+        width: 280px;
+        position: absolute;
+        left: -110px;
+        top: 10px;
+    }
+    .circulo .caixas{
+        width: 200px;
+        position: absolute;
+        left: 170px;
+        top: 67px;
+    }
+
+.mapa{
+    background-image: url(/img/map-3716232.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 400px;
+    height: 500px;
+    margin: 0 30px;
+}
+
+.locais-atendimento{
+    width: 400px;
+    height: 235px;
+   /* background-color: #9EBAA3;*/
+    text-align: center;
+    color: #57A156;
+}
+    .locais-atendimento h2{
+        font-size: 40px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-style: italic;
+    }
+        .locais-atendimento h3{
+            font-weight: 500;
+        }
+
+
+.sobre-parceiros{
+    background-color: #B0CEB0;
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .sobre{
+        width: 700px;
+        height: 400px;
+        background-color: #9EBAA3;
+        position: relative;
+    }
+        .sobre img{
+            width:600px;
+            height:400px;
+            position: relative;
+        }
+            .retan{
+                position: absolute;
+                /*background-color: #57A156;*/
+                
+                /*height: 30px;*/
+                text-align: center;
+                right: 0;
+                height: 0;
+                color: white;
+                /*transform: sken(-30deg);
+                -webkit-transform: skew(-30deg); 
+                -moz-transform: skew(-30deg); 
+                -o-transform: skew(-30deg);*/ 
+            }
+                .retan4{
+                    border-bottom: 50px solid  #B0CEB0;
+                    border-left: 30px solid transparent;
+                    width: 300px;
+                    bottom: 50px;  
+                }
+                    .retan4 h3 {
+                        margin-top: 10px;
+                        font-weight: bold;
+                    }
+                        
+                .retan3{
+                    border-bottom: 50px solid #57A156;
+                    border-left: 30px solid transparent;
+                    width: 400px;
+                    bottom: 0;
+                    
+                }
+                    .retan3 p {
+                        text-align: start;
+                        font-weight: bolder;
+                        margin: 2px auto;
+                    }
+                
+    .parceiros{
+        width: 500px;
+        height: 400px;
+        background-color: white;
+        position: relative;
+    }
+        .parceiros h3{
+            color: #57A156;
+            font-size: 25px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .parceiros img{
+            position: absolute;
+            width: 190px;
+        }
+        .fde{
+            right:140px;
+            top: 90px;
+    
+        }
+        .tzar{
+            left: 25px;
+            top: 180px;
+        }
+        .camil{
+            right: 60px;
+            top: 230px;
+        }
+
+.contato{
+    background-color: #57A156;
+    min-height: 500px;
+}
+    .contato-header {
+        height: 80px;
+        background-color: #7DC77C;
+        position: relative;
+    }
+    .contato-header h3{
+        color: white;
+        font-size: 24px;
+        line-height: 80px;
+        text-align: center;
+        font-style: italic;
+        }
+
+        .triangle-topleft {
+            width: 0;
+            height: 0;
+            border-top: 40px solid #7DC77C;
+            border-right: 40px solid transparent;
+            transform: rotate(5deg);
+            position: absolute;
+            top: 60px;
+            left: 150px;
+            }
+        
+.contato-body{
+   /* min-height: 470px;*/
+    /*background-color: #9EBAA3;*/
+    padding-top: 20px;
+    display: flex;
+    position: relative;
+}
+    .circulos{
+        /*width: 120px;*/
+        height: 390px;
+        margin-left: 80px;    
+    }
+        .circ{
+            background-image:linear-gradient(50deg,rgb(213, 241, 213), #7DC77C,rgb(213, 241, 213));
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            margin: 10px 0;
+            position: relative;
+            padding: 5px;
+        }
+            .circ::before{
+                content: '';
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                background-color: #57A156;
+                position: absolute;
+                
+            }
+            .circ::after{
+                content: '';
+                width:65px;
+                height: 65px;
+                border-radius: 50%;
+                background-color: #7DC77C;
+                position: absolute;
+                z-index: 1;
+                margin: 8px;
+               
+            }
+    .circ i {
+        position: absolute;
+        color: white;
+        font-size: 40px;
+        top: 25px;
+        left: 25px;
+        z-index: 2;
+    }
+    .whats{
+         font-size: 50px !important;
+         top: 20px !important;
+     }
+
+    
+   .info-contato{
+       /* width: 250px;*/
+        height: 390px;
+        margin: 10px 0 0;
+   } 
+    .info-contato h3 {
+        color:white;
+        font-weight: bold;
+        margin: 0;
+        font-size: 24px;
+    }
+    .info-contato a{
+        color: white;
+        font-style: italic;
+        font-size: 18px;
+        font-weight: none;
+        padding: 0;
+    }
+    .info-contato a:hover{
+        color: white;
+        text-decoration: none;
+    }
+    .info-contato-card{ 
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left:15px;
+        margin-bottom: 22px;
+    }
+    .contato-body img{
+        width: 260px;
+        height: 410px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        
+    }
+        .contato-body .caminhao-verde{
+            width: 450px;
+            height: 350px;
+            position: absolute;
+            bottom: 80px;
+            right: 400px;
+            opacity: 0.2;
+        }
+    .retan5{
+        border-bottom: 50px solid #7DC77C;
+        border-right: 35px solid transparent;
+        width: 1150px;
+        position: absolute;
+        bottom: 37px;
+        z-index: 1;
+    }
+    .retan6{
+        border-bottom: 50px solid #9EBAA3;
+        border-right: 37px solid transparent;
+        width: 1250px;
+        bottom: 0;
+        position: absolute;
+    }
+
+    
+footer{
+    background-color: #57A156;
+    width: 100%;
+    min-height: 100px;
+    border-top: white solid 5px;
+    text-align: center;
+    color: white;
+        
+}
+footer h3{
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 95px;
+    margin: 0;
+    display: inline-block;
+}
+    footer .agencia{
+        float: right;
+        margin-top: 25px;
+    }
+    footer a{
+        display: inline-block;
+        float: right;
+        margin-right: 20px;
+        color: white;
+        line-height: 95px;
+        
+    }   
+        footer a h4 {
+            color: yellow;
+            font-weight: 900;
+        }
+   
+        footer a span {
+            line-height:0px;
+            display: block;
+        }
+        footer a:hover{
+            color: white;
+            text-decoration: none;
+        }
+
+
+
+
+.title {
+    color: #57A156;
+    text-align: center;
+    margin: 60px 0 30px;
+    
+}
+.container{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+    .card{
+        width: 400px;
+        margin: 60px 40px 100px ;
+        padding: 10px 20px;
+        border: 0!important;
+        transition: 0.5s all;
+       /* border: #57A156 2px solid!import nt;*/
+        /*box-shadow: none!important;*/
+        text-align: center;
+        border-radius: 0 !important;
+    }
+        .card:hover{
+            -moz-box-shadow: 5px 5px 30px -15px rgb(160, 158, 158) !important;
+            -webkit-box-shadow: 5px 5px 30px -15px rgb(160, 158, 158) !important;
+            box-shadow: 5px 5px 30px -15px rgb(160, 158, 158) !important;
+        }
+        .card img {
+            width: 100%;
+            border-bottom: #57A156 2px solid;
+        }
+        .card h2{
+            color: #57A156;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .card p{
+           text-align: justify; 
+           text-justify:inter-word;
+        }
+        .card a {
+            font-size: 14px;
+            font-weight: bold;
+            color: #57A156;
+            text-align: right;
+            margin: 0 10px 0;
+        }
+            .card a:hover{
+                text-decoration: none;
+                color:#57A156;
+            }
+      
+/*Style - page frota*/
+
+.container > img{
+    width: 80%;
+    height: 350px;
+}
+
+/*Style - page form*/
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 0;
+}
+
+    .form label{
+        color: #57A156;
+        font-weight: bolder;
+        margin: 0;
+    }
+        .form input{
+            border-bottom: #57A156 solid 2px;
+            width: 400px;
+        }
+        .form textarea {
+            border: #57A156 solid 1px;
+            width: 400px;
+            padding: 5px;
+        }
+        .form .btn-submit{
+            background-color: #57A156;
+            color: white;
+            border: 0;
+        }
+    .form h1{
+        color: #57A156;
+        font-weight: bolder;
+        margin-bottom: 60px;
+    }
+    .form ::placeholder{
+        opacity: 0.5;
+        color: #7DC77C;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
